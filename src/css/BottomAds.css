@@ -1,0 +1,13 @@
+.BottomAds{
+    position: fixed;
+    bottom: 0px;
+    width: calc(100% - 4px);
+    height: 75px;
+    z-index: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 4vh;
+    border-top: solid 2px #147ebb;
+    border-bottom: solid 3px #147ebb;
+}

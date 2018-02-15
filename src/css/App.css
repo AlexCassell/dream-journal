@@ -1,0 +1,32 @@
+/* All images linked in the file are intended for android app and are therefore very large */
+
+.App {
+  position: absolute;
+  overflow-x: hidden;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background-image: url('../images/backgrounds/starBackgroundHD1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: solid #147ebb 2px;
+  z-index: 1;
+}
+
+.App-header {
+  background-color: #222;
+  height: 3%;
+  padding: 5px;
+  color: white;
+}
+
+.SettingsButton{
+  position: absolute;
+  bottom: 77px;
+  right: 2px;  
+  background: url("../images/ui/settings.png");
+  background-size: contain;
+  border: none;
+  width: 8vh;
+  height: 8vh;
+}
