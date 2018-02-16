@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../css/RecentDreams.css';
-class RecentDreams extends Component {
+import '../css/MyDreams.css';
+class MyDreams extends Component {
     constructor(props) {
     super(props);
     this.state = {
@@ -10,7 +10,7 @@ class RecentDreams extends Component {
 
     render() {
         return (
-        <div className="RecentDreams">
+        <div className="MyDreams">
             <div className="CalendarWrapper">
                 <div className="Calendar__Month">
                 January 2018
@@ -133,4 +133,4 @@ class RecentDreams extends Component {
     }
 }
 
-export default RecentDreams;
+export default MyDreams;

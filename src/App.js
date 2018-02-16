@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './css/App.css';
 import './css/Menu.css';
 import Login from './components/Login';
+import NewDream from './components/NewDream';
 import Settings from './components/Settings';
 import BottomAds from './components/BottomAds';
-import RecentDreams from './components/MyRecentDreams';
+import MyDreams from './components/MyDreams';
 
 import {email} from './components/Login';
 
@@ -51,7 +52,7 @@ class App extends Component {
       this.setState({loggedIn:
         <div>
           {this.state.menu}
-          {this.state.body}
+          < NewDream />
         </div>
       });
       if(paid){
@@ -84,6 +85,7 @@ class App extends Component {
       <div> 
       {this.state.menu}
       <Settings />
+      {this.state.bottomAds}
       </div>
     });
     settingsOpened = true;
@@ -107,7 +109,8 @@ class App extends Component {
     this.setState({loggedIn:
       <div> 
       {this.state.menu}
-      <RecentDreams />
+      <MyDreams />
+      {this.state.bottomAds}
       </div>
     });
   }
@@ -116,7 +119,6 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.loggedIn}
-        {this.state.bottomAds}
       </div>
     );
   }
