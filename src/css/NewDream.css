@@ -43,16 +43,28 @@ textarea {
     margin-right: 5vw;
     display: flex;
     flex-direction: column;
+    /* border: red solid 2px; */
 }
 
-.TagsInnerWrappers{
-    width:100%;
+.TagsWrappers__Inner{
     display: flex;
+    margin-bottom: 2vw;
     flex-direction: row;
+    flex-wrap: wrap;
+    border: solid #147ebb 3px;
+    padding: 2vw;
 }
 
 .Tags{
-    background-color: red;
-    height: 15vw;
-    width: 15vw;
+    background: none;
+    border: solid #147ebb 2px;
+    text-align: center;
+    color: white;
+    font-size: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 10vw;
+    margin: 1vw;
+    /* min-width: 15vw; */
+    width: 40vw;
 }
