@@ -35,6 +35,7 @@
 .Calendar__Square{
     width: calc(7.8vw - 5px);
     height: calc(7.8vw - 5px);
+    font-size: 4vw;
     background: none;
     border: none;
     color: white;
@@ -43,6 +44,7 @@
 .Calendar__SquarePost{
     width: calc(7.8vw - 5px);
     height: calc(7.8vw - 5px);
+    font-size: 4vw;
     background: none;
     border: none;
     color: #147ebb;

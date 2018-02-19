@@ -20,12 +20,43 @@ class App extends Component {
         'loggedIn': '',
         'menu': '',
         'page':'',
-        'bottomAds': ''
+        'bottomAds': '',
     };
   }
 
   componentWillMount(){
+    // window.outerWidth
     this.checkIfLoggedIn();
+
+    if(window.outerWidth < 1000){
+    this.setState({menu:
+      <div id="menuToggle">
+      <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+      <ul className="menu">
+        <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons" name="recent" onClick={(e) => this.closeMenu(e)}>Your Dreams</button></div>
+        <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons">New Dream</button></div>
+        <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons">Search Your Dreams</button></div>
+        <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons">Browse Dreams</button></div>
+        <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons" name="settings" onClick={(e) => this.closeMenu(e)}>Settings</button></div>
+      </ul>
+    </div>
+  });
+    }
+    else if(window.outerWidth > 999){
+      this.setState({menu:
+        <div className="Header">
+          <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons" name="recent" onClick={(e) => this.closeMenu(e)}>Your Dreams • </button></div>
+          <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons">New Dream • </button></div>
+          <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons">Search Your Dreams • </button></div>
+          <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons">Browse Dreams • </button></div>
+          <div className="Menu__Buttons__HoverEffect"><button className="Menu__Buttons" name="settings" onClick={(e) => this.closeMenu(e)}>Settings • </button></div>
+        </div>
+      });
+    }
+    
   }
 
   checkIfLoggedIn(){
@@ -34,21 +65,6 @@ class App extends Component {
       this.setState({loggedIn:<Login />});
     }
     else{
-      this.setState({menu:
-        <div id="menuToggle">
-        <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-          <ul className="menu">
-            <button className="Menu__Buttons" name="recent" onClick={(e) => this.closeMenu(e)}>Your Dreams</button>
-            <button className="Menu__Buttons">New Dream</button>
-            <button className="Menu__Buttons">Search Your Dreams</button>
-            <button className="Menu__Buttons">Browse Dreams</button>
-            <button className="Menu__Buttons" name="settings" onClick={(e) => this.closeMenu(e)}>Settings</button>
-          </ul>
-        </div>      
-        });
       this.setState({loggedIn:
         <div>
           {this.state.menu}

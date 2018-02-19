@@ -1,88 +1,256 @@
-.NewDream{
-    position: absolute;
-    color: white;
+@media screen and (max-width: 999px) {
+    .NewDream{
+        position: absolute;
+        color: white;
+    }
+
+    .Title{
+        font-size: 8vw;
+        text-align: center;
+        margin-bottom: 5vh;    
+    }
+
+    .Subtitle{
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 1vh;
+    }
+
+    .FormsWrapper{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Forms{
+        margin-bottom: 5vw;
+        border: solid #147ebb 3px;
+        background: none;
+        color: white;
+        font-size: 4vw;
+        outline: none;
+    }
+
+    textarea {
+        height: 60vh;
+        resize: none;
+    }
+
+    .TagsWrapper{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TagsWrappers__Inner{
+        display: flex;
+        margin-bottom: 2vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid #147ebb 3px;
+        padding: 2vw;
+    }
+
+    .Tags{
+        background: none;
+        outline: none;
+        cursor: pointer;
+        border: solid #147ebb 2px;
+        text-align: center;
+        color: white;
+        font-size: 4vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 10vw;
+        margin: 1vw;
+        width: 40vw;
+    }
+
+    .TagsClicked{
+        background: #5DA5D0;
+        border: solid #FFD76A 3px;
+    }
+
+    .TagsOtherWrapper{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1vw;
+    }
+
+    .TagsOther{
+        background: none;
+        outline: none;
+        border: solid #147ebb 2px;
+        text-align: center;
+        color: white;
+        font-size: 4vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 10vw;
+        width: 70vw;
+    }
+
+    .TagsOther__Add{
+        background: none;
+        outline: none;
+        cursor: pointer;
+        border: solid #147ebb 2px;
+        text-align: center;
+        color: white;
+        font-size: 6vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 100%;
+        margin-left: 1vw;
+        width: 9vw;
+    }
+
+
+    .PostSubmit{
+        background: none;
+        cursor: pointer;
+        border: solid #147ebb 2px;
+        text-align: center;
+        color: white;
+        font-size: 4vw;
+        margin-top: 2vw;
+        margin-bottom: 5vw;
+        width: 26vw;
+        height: 15vw;
+        margin-left: calc(50% - 13vw);    
+    }
 }
 
-.Title{
-    font-size: 8vw;
-    text-align: center;
-    margin-bottom: 5vh;    
-}
+/* Desktops */
 
-.Subtitle{
-    font-size: 5vw;
-    text-align: center;
-    margin-bottom: 1vh;
-}
+@media screen and (min-width: 999px) {
+    .NewDream{
+        position: absolute;
+        color: white;
+    }
 
-.FormsWrapper{
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    display: flex;
-    flex-direction: column;
-}
+    .Title{
+        font-size: 3vh;
+        text-align: center;
+        margin-top: 5vh; 
+        margin-bottom: 5vh;    
+    }
 
-.Forms{
-    margin-bottom: 5vw;
-    border: solid #147ebb 3px;
-    background: none;
-    color: white;
-    font-size: 4vw;
-    outline: none;
-}
+    .Subtitle{
+        font-size: 2vw;
+        text-align: center;
+        margin-bottom: 1vh;
+    }
 
-textarea {
-    height: 60vh;
-    resize: none;
-}
+    .FormsWrapper{
+        width: 30vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        display: flex;
+        flex-direction: column;
+    }
 
-.TagsWrapper{
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    display: flex;
-    flex-direction: column;
-}
+    .Forms{
+        margin-bottom: 1vw;
+        border: solid #147ebb 3px;
+        background: none;
+        color: white;
+        font-size: 2.5vh;
+        outline: none;
+    }
 
-.TagsWrappers__Inner{
-    display: flex;
-    margin-bottom: 2vw;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: solid #147ebb 3px;
-    padding: 2vw;
-}
+    textarea {
+        height: 65vh;
+        resize: none;
+    }
 
-.Tags{
-    background: none;
-    outline: none;
-    border: solid #147ebb 2px;
-    text-align: center;
-    color: white;
-    font-size: 4vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    height: 10vw;
-    margin: 1vw;
-    width: 40vw;
-}
+    .TagsWrapper{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
 
-.TagsClicked{
-    background: #5DA5D0;
-    border: solid #FFD76A 3px;
-}
+    .TagsWrappers__Inner{
+        display: flex;
+        margin-bottom: 2vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid #147ebb 3px;
+        padding: 2vw;
+    }
+
+    .Tags{
+        background: none;
+        outline: none;
+        cursor: pointer;
+        border: solid #147ebb 2px;
+        text-align: center;
+        color: white;
+        font-size: 4vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 10vw;
+        margin: 1vw;
+        width: 40vw;
+    }
+
+    .TagsClicked{
+        background: #5DA5D0;
+        border: solid #FFD76A 3px;
+    }
+
+    .TagsOtherWrapper{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1vw;
+    }
+
+    .TagsOther{
+        background: none;
+        outline: none;
+        border: solid #147ebb 2px;
+        text-align: center;
+        color: white;
+        font-size: 4vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 10vw;
+        width: 70vw;
+    }
+
+    .TagsOther__Add{
+        background: none;
+        outline: none;
+        cursor: pointer;
+        border: solid #147ebb 2px;
+        text-align: center;
+        color: white;
+        font-size: 6vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 100%;
+        margin-left: 1vw;
+        width: 9vw;
+    }
 
 
-.PostSubmit{
-    background: none;
-    border: solid #147ebb 2px;
-    text-align: center;
-    color: white;
-    font-size: 4vw;
-    margin-top: 2vw;
-    margin-bottom: 5vw;
-    width: 26vw;
-    height: 15vw;
-    margin-left: calc(50% - 13vw);    
+    .PostSubmit{
+        background: none;
+        cursor: pointer;
+        border: solid #147ebb 2px;
+        text-align: center;
+        color: white;
+        font-size: 4vw;
+        margin-top: 2vw;
+        margin-bottom: 5vw;
+        width: 26vw;
+        height: 15vw;
+        margin-left: calc(50% - 13vw);    
+    }
 }
